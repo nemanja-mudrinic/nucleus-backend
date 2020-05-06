@@ -9,6 +9,9 @@ import { LOGGER_SERVICE } from '../utils/contants';
 import { ResponseInterceptor } from '../interceptors';
 
 export function configureApp(app: INestApplication) {
+  // enable cors
+  app.enableCors();
+
   // setup swagger
   setupSwagger(app);
 

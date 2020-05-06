@@ -8,7 +8,7 @@ import { AuthenticateUserRequest } from '../../dto/request/user';
 import { AuthenticateUserResponse } from '../../dto/response/user';
 
 @ApiTags('Auth')
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
   private readonly _authService: IAuthService;
 

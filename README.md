@@ -18,7 +18,7 @@ Project include:
 * Class mapper
 * Exception/Error handler
 * Request middleware for tracking request id
-* Ready enterpraise file structure
+* Ready enterprise file structure
 * Tests for service layer using jest
 
 ## App Structure and guidelines

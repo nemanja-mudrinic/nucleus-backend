@@ -10,7 +10,7 @@ import { UserResponse } from '../../dto/response/user';
   name: SESSION_ID,
   description: 'Session id',
 })
-@Controller('users')
+@Controller('api/users')
 export class UserController {
   private readonly _userService: IUserService;
 
