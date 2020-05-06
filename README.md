@@ -1,9 +1,13 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+<a align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" height="120" alt="Nest Logo" /></a>
+  <a href="http://typeorm.io/"><img src="https://github.com/typeorm/typeorm/raw/master/resources/logo_big.png" height="120"></a>
+  <a title="Daniel Lundin / PostgreSQL License (https://www.postgresql.org/about/licence/)" href="https://commons.wikimedia.org/wiki/File:Postgresql_elephant.svg"><img height="120" alt="Postgresql elephant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/512px-Postgresql_elephant.svg.png"></a>
+  <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" height="120">
 </p>
+
 ## Description
 
-[Nucleus](https://github.com/nestjs/nest) boilerplate project.
+[Nucleus](https://github.com/nemanja-mudrinic/nucleus-backend) boilerplate project.
 
 Project include:
 
@@ -19,12 +23,12 @@ Project include:
 
 ## App Structure and guidelines
 
-#### 1. Api Dir
+### 1. Api Dir
 
 This dir holds app modules that include controller and services.
 Each service has own interface. Only serices are covered with unit tests.
 
-#### 2. Config Dir
+### 2. Config Dir
 
 This dir includes all configuration modules for easier adding/removing configuration.
 
@@ -156,7 +160,7 @@ IMPORTANT: Each request need SessionId as header with UUID value!
 
 ## Stay in touch
 
-- Author - [Nemanja Mudrinic](https://kamilmysliwiec.com)
+- Author - [Nemanja Mudrinic](https://www.linkedin.com/in/nemanja-mudrinic-666334145/)
 
 ## License
   [MIT licensed](LICENSE).
