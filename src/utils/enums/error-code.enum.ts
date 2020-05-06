@@ -1,0 +1,6 @@
+export enum ErrorCode {
+  UNKNOWN_ERROR = 0,
+  GENERAL_ERROR = 100,
+  FIELD_VALIDATION = 101,
+  SPECIFIC_ERROR = 102,
+}
