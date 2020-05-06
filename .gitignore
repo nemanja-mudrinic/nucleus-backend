@@ -35,3 +35,6 @@ lerna-debug.log*
 
 # Docker
 environment/volumes
+
+#Dotenv
+.env
