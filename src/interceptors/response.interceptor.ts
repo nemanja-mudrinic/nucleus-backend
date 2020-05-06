@@ -9,6 +9,7 @@ import { map } from 'rxjs/operators';
 import { Request } from 'express';
 
 import { SESSION_ID } from '../utils/contants';
+import { uuid } from "uuidv4";
 
 const LOGIN_ROUTE = 'auth/login';
 
@@ -23,17 +24,16 @@ export class ResponseInterceptor implements NestInterceptor {
     const request = ctx.getRequest();
 
     const sessionId = request.headers[SESSION_ID];
-    if (sessionId) {
-      response.headers[SESSION_ID] = sessionId;
-    }
 
     const isLoginRoute = this.isLoginRoute(request);
 
     return next.handle().pipe(
       map(data => {
         if (isLoginRoute) {
-          const userId = data.user.id;
+          const userId = uuid();
           response.setHeader(SESSION_ID, userId);
+        } else {
+          response.setHeader(SESSION_ID, sessionId);
         }
         return data;
       }),
