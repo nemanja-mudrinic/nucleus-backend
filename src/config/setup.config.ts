@@ -5,7 +5,7 @@ import {
   RestExceptionHandler,
   ValidationHandler,
 } from '../exceptions/handlers';
-import { LOGGER_SERVICE } from '../utils/contants';
+import { LOGGER_SERVICE } from '../utils/constants';
 import { ResponseInterceptor } from '../interceptors';
 
 export function configureApp(app: INestApplication) {

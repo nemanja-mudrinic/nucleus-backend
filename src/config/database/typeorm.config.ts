@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions, TypeOrmOptionsFactory } from '@nestjs/typeorm';
 
-import { PRIMARY_DATABASE } from '../../utils/contants';
+import { PRIMARY_DATABASE } from '../../utils/constants';
 import { UserEntity } from '../../entities';
 
 @Injectable()

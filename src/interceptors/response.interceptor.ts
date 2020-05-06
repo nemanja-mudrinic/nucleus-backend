@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Request } from 'express';
 
-import { SESSION_ID } from '../utils/contants';
+import { SESSION_ID } from '../utils/constants';
 import { uuid } from "uuidv4";
 
 const LOGIN_ROUTE = 'auth/login';

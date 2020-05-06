@@ -5,7 +5,7 @@ import {
   SWAGGER_API_DESCRIPTION,
   SWAGGER_API_NAME,
   SWAGGER_API_ROOT,
-} from '../../utils/contants';
+} from '../../utils/constants';
 
 export function setupSwagger(app: INestApplication) {
   const swaggerOptions = new DocumentBuilder()

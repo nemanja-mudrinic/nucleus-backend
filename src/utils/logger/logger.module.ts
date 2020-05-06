@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 
-import { LOGGER_SERVICE } from "../contants";
+import { LOGGER_SERVICE } from "../constants";
 import { LoggerService } from "./impl";
 
 const LOGGER = {

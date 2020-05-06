@@ -3,8 +3,8 @@ import * as morgan from 'morgan';
 import { Request, Response } from 'express';
 
 import { ILoggerService } from '../utils/logger';
-import { LOGGER_SERVICE, REQUEST_MIDDLEWARE } from '../utils/contants';
-import { COLERATION_ID } from '../utils/contants';
+import { LOGGER_SERVICE, REQUEST_MIDDLEWARE } from '../utils/constants';
+import { COLERATION_ID } from '../utils/constants';
 
 @Injectable()
 export class MorganMiddleware implements NestMiddleware {

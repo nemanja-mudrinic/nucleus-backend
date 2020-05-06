@@ -3,7 +3,7 @@ import { compare } from 'bcrypt';
 
 import { IAuthService } from '../auth.interface';
 import { RegisterRequest } from '../../../../dto/request/user';
-import { TOKEN_SERVICE, USER_SERVICE } from '../../../../utils/contants';
+import { TOKEN_SERVICE, USER_SERVICE } from '../../../../utils/constants';
 import { AuthenticateUserRequest } from '../../../../dto/request/user';
 import {
   AuthenticateUserResponse,

@@ -5,7 +5,7 @@ import {
   EXCEPTION_HANDLER,
   LOGGER_SERVICE,
   COLERATION_ID,
-} from '../../utils/contants';
+} from '../../utils/constants';
 import { ErrorResponse } from '../../dto/response/application';
 import {
   createSpecificErrorResponse,

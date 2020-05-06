@@ -4,7 +4,7 @@ import { ConfigService } from '@nestjs/config';
 
 import { AppModule } from './app.module';
 import { configureApp } from './config';
-import { LOGGER_SERVICE } from './utils/contants';
+import { LOGGER_SERVICE } from './utils/constants';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);

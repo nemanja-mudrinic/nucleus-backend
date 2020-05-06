@@ -7,7 +7,7 @@ import { uuid } from 'uuidv4';
 import { AuthService } from '../../services/impl';
 import { UserRepository } from '../../../../repositories';
 import { IAuthService } from '../../services';
-import { TOKEN_SERVICE, USER_SERVICE } from '../../../../utils/contants';
+import { TOKEN_SERVICE, USER_SERVICE } from '../../../../utils/constants';
 import {
   getUser,
   USER_FIRST_NAME,

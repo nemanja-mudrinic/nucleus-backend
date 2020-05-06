@@ -2,7 +2,7 @@ import { Controller, Get, Inject, Param } from '@nestjs/common';
 import { ApiHeader, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 import { IUserService } from './services';
-import { USER_SERVICE, SESSION_ID } from '../../utils/contants';
+import { USER_SERVICE, SESSION_ID } from '../../utils/constants';
 import { UserResponse } from '../../dto/response/user';
 
 @ApiTags('users')

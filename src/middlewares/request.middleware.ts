@@ -3,8 +3,8 @@ import { Request, Response } from 'express';
 import { uuid } from 'uuidv4';
 
 import { ILoggerService } from '../utils/logger';
-import { LOGGER_SERVICE } from '../utils/contants';
-import { COLERATION_ID, SESSION_ID } from '../utils/contants';
+import { LOGGER_SERVICE } from '../utils/constants';
+import { COLERATION_ID, SESSION_ID } from '../utils/constants';
 import { UnauthorizedException } from '../exceptions';
 
 const AUTH_ROUTE = 'auth';

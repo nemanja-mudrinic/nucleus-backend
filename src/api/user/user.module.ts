@@ -4,7 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserRepository } from '../../repositories';
 import { UserController } from './user.controller';
 import { UserService } from './services/impl';
-import { USER_SERVICE } from '../../utils/contants';
+import { USER_SERVICE } from '../../utils/constants';
 
 const SERVICES = [
   {

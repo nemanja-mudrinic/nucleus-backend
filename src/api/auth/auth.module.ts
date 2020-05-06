@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 
 import { AuthController } from './auth.controller';
 import { UserModule } from '../user';
-import { AUTH_SERVICE, TOKEN_SERVICE } from '../../utils/contants';
+import { AUTH_SERVICE, TOKEN_SERVICE } from '../../utils/constants';
 import { TokenService, AuthService } from './services/impl';
 
 const SERVICES = [
