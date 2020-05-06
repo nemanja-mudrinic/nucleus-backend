@@ -38,3 +38,4 @@ environment/volumes
 
 #Dotenv
 .env
+environment/.env.docker

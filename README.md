@@ -134,11 +134,29 @@ $ cd envivironment && docker-compose up
 
 ## How to run app
 
+Setup env
+
+```bash
+$ cp .env.example .env
+# Add your env values
+
+$ cd environment && cp .env.docker.example .env.docker
+# Add your env values
+```
+
+Install packages
+
 ```bash
 $ npm install
 # if you don't have postgres
 $ cd envivironment && docker-compose up
 $ npm run typeorm:migrate
+```
+
+Start app
+
+```bash
+npm run start:dev
 ```
 
 ### If you want to change to mysql
