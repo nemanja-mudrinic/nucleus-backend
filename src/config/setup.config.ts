@@ -5,12 +5,14 @@ import {
   RestExceptionHandler,
   ValidationHandler,
 } from '../exceptions/handlers';
-import { LOGGER_SERVICE } from '../utils/constants';
+import { LOGGER_SERVICE, SESSION_ID } from '../utils/constants';
 import { ResponseInterceptor } from '../interceptors';
 
 export function configureApp(app: INestApplication) {
   // enable cors
-  app.enableCors();
+  app.enableCors({
+    exposedHeaders: SESSION_ID
+  });
 
   // setup swagger
   setupSwagger(app);
