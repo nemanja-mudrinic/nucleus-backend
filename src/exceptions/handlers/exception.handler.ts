@@ -13,8 +13,8 @@ import {
   createUnknowError,
   createValidationError,
   isSpecificError,
-  isGeneralError,
-} from './exception.util';
+  isGeneralError, handle404Error
+} from "./exception.util";
 import { ValidationException } from '../validation.exception';
 
 @Catch()
@@ -42,6 +42,8 @@ export class RestExceptionHandler implements ExceptionFilter {
       errorResponse = createGeneralErrorResponse(exception);
     } else if (exception instanceof ValidationException) {
       errorResponse = createValidationError(exception);
+    } else if (exception.status === 404) {
+      errorResponse = handle404Error(exception.message);
     } else {
       errorResponse = createUnknowError();
     }

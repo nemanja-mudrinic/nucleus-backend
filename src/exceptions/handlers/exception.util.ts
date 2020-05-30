@@ -54,6 +54,18 @@ export const createGeneralErrorResponse = <T extends BaseException>(
   };
 };
 
+export const handle404Error = (message: string): ErrorResponse => {
+  return {
+    httpStatus: HttpStatus.NOT_FOUND,
+    errorCode: ErrorCode.GENERAL_ERROR,
+    payload: {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+      // @ts-ignore
+      message: message,
+    },
+  };
+}
+
 export const createValidationError = (
   exception: ValidationException,
 ): ErrorResponse => {
